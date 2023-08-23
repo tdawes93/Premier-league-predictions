@@ -44,7 +44,10 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     
+    'phonenumber_field',
+    
     'home',
+    'profiles',
 ]
 
 MIDDLEWARE = [
