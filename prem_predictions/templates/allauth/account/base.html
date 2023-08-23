@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="row header-buffer px-0 mx-0">
+    <div class="col-12 px-0 mx-0"></div>
+</div>
+{% endblock %}
+{% block content %}
+
+<div class="container-fluid mt-2 mt-lg-0 bg-white w-100 allauth-container">
+  <div class="row mx-0 px-0 w-100">
+    <div class="col-12 px-0 px-lg-2 mt-3">
+
+
+      {% block extra_content %}
+      {% endblock %}
+    </div>
+  </div>
+</div>
+{% endblock %}
