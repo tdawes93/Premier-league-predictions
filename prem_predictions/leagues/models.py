@@ -8,6 +8,8 @@ class league(models.Model):
     """
     name = models.CharField(max_length=100)
     friendly_name = models.CharField(max_length=100, null=True, blank=True)
+    country = CountryField(null=True, blank=True)
+    tier_in_country = models.PositiveSmallIntegerField(default=1)
     
     def __str__(self):
         return f'{self.name}'
